@@ -10,7 +10,7 @@ int main() {
     scanf("%d", &dim2);
     printf("Ingrese la tercera dimension");
     scanf("%d", &dim3);
-    int arreglo[dim1][dim2][dim3];
+    int arreglo[dim1][dim2][dim3];// declaramos el arreglo que usaremos como entero de las 3 dimensiones 
     // Inicializar todas las matrices en ceros
     for (int i = 0; i < dim1; i++) {
         for (int j = 0; j < dim2; j++) {
