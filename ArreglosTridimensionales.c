@@ -17,11 +17,11 @@ int main() {
         for (int j = 0; j < dim2; j++) {
             for (int k = 0; k < dim3; k++) {//verifiacacion de las 3 dimensiones con i,j,k para poder entenderlo
                 arreglo[i][j][k] = 0;// el arreglo final lo igualamos a 0 para obtener las 3 dimensiones sugeridas
-            }
+            } //usamos datos que serviran para diferenciar las 3 matrices 
         }
     }
     //Comenzamos a poder declarar la matriz en unos
-    for (int j = 0; j < dim2; j++) {
+    for (int j = 0; j < dim2; j++) { //verifacacion de los datos de las 3 matrices
         for (int k = 0; k < dim3; k++) {
             arreglo[dim1-1][j][k] = 1;// lo datos de la primera dimension los igualamos a 1
         } // restamos un valor de la dimension aparte de los otroa datos que seran igualados a 1 
@@ -33,9 +33,9 @@ int main() {
             for (int k = 0; k < dim3; k++) {
                 printf("%d ", arreglo[i][j][k]);// pedimos imrimir en pantalla los datos  del arreglo
             }
-            printf("\n");// reliazamos un salto de linea para un mejor orden
+            printf("\n");// reliazamos un salto de linea para un mejor orden del 0
         }
-        printf("\n");
+        printf("\n"); // realizamos el salto de linea de matriz igualada a 1
     }
 
     return 0;
